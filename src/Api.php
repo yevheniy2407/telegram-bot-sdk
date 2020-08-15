@@ -954,10 +954,11 @@ class Api
      * Sends a POST request to Telegram Bot API and returns the result.
      *
      * @param string $endpoint
-     * @param array  $params
-     * @param bool   $fileUpload Set true if a file is being uploaded.
+     * @param array $params
+     * @param bool $fileUpload Set true if a file is being uploaded.
      *
      * @return TelegramResponse
+     * @throws TelegramSDKException
      */
     protected function post($endpoint, array $params = [], $fileUpload = false)
     {
