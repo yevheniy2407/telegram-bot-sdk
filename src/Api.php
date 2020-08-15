@@ -1063,6 +1063,7 @@ class Api
      * @param $arguments
      *
      * @return bool|TelegramResponse
+     * @throws TelegramSDKException
      */
     public function __call($method, $arguments)
     {
